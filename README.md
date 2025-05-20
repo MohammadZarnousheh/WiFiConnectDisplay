@@ -3,15 +3,11 @@ If WiFi is disconnected (e.g. router turned off), the system automatically attem
 
 Hardware Connections:
 
-OLED SH1106 via I2C:
-
-SCL ➝ GPIO5 (D1 on NodeMCU)
-
-SDA ➝ GPIO4 (D2 on NodeMCU)
-
-VCC ➝ 3.3V
-
-GND ➝ GND
+| Component        | Connection     |
+|------------------|----------------|
+| OLED SH1106 (I2C)| SDA -> D2 (GPIO4)  |
+|                  | SCL -> D1 (GPIO5)  |
+| ESP8266          | NodeMCU or WeMos board |
 
 If you're using other boards like Wemos D1 Mini or bare ESP8266 modules, make sure to adapt the pins accordingly.
 
@@ -23,13 +19,12 @@ If you're using other boards like Wemos D1 Mini or bare ESP8266 modules, make su
 
 نمایشگر OLED مدل SH1106 با ارتباط I2C:
 
-SCL ➝ GPIO5 (D1 روی NodeMCU)
 
-SDA ➝ GPIO4 (D2 روی NodeMCU)
-
-VCC ➝ 3.3V
-
-GND ➝ GND
+| قطعه             | اتصال به ESP8266 |
+|------------------|------------------|
+| OLED SH1106      | SDA → D2 (GPIO4) |
+|                  | SCL → D1 (GPIO5) |
+| ماژول ESP8266    | NodeMCU یا WeMos |
 
 در صورت استفاده از بردهای دیگر مانند Wemos D1 Mini یا بردهای غیر NodeMCU، شماره پایه‌ها را متناسب با پین‌آوت آن‌ها تنظیم کنید.
 

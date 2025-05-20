@@ -14,3 +14,22 @@ VCC ➝ 3.3V
 GND ➝ GND
 
 در صورت استفاده از بردهای دیگر مانند Wemos D1 Mini یا بردهای غیر NodeMCU، شماره پایه‌ها را متناسب با پین‌آوت آن‌ها تنظیم کنید.
+
+
+
+This project uses the ESP8266 module and an OLED display (SH1106) to graphically visualize the WiFi connection status. On boot, a progress bar shows the connection attempt. Once connected, the device displays the current WiFi signal strength (RSSI).
+If WiFi is disconnected (e.g. router turned off), the system automatically attempts to reconnect, and the loading interface reappears.
+
+🔌 Hardware Connections:
+
+OLED SH1106 via I2C:
+
+SCL ➝ GPIO5 (D1 on NodeMCU)
+
+SDA ➝ GPIO4 (D2 on NodeMCU)
+
+VCC ➝ 3.3V
+
+GND ➝ GND
+
+If you're using other boards like Wemos D1 Mini or bare ESP8266 modules, make sure to adapt the pins accordingly.
